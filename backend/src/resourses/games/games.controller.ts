@@ -9,10 +9,13 @@ import {
   Param,
   Post,
   Put,
+  UseGuards,
 } from '@nestjs/common';
 import { GamesService } from 'src/resourses/games/games.service';
 import { IGame, IGameDTO } from 'src/common/interfaces';
+import { AuthGuard } from './../../common/guards/auth.guard';
 
+@UseGuards(AuthGuard)
 @Controller('games')
 export class GamesController {
   constructor(private gamesService: GamesService) {}
