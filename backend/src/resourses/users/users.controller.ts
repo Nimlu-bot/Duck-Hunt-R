@@ -10,7 +10,7 @@ import {
   Post,
   Put,
 } from '@nestjs/common';
-import { IUser, IUserDTO } from 'src/common/interfaces';
+import { IUser, IUserDTO } from '../../common/interfaces';
 import { UsersService } from './users.service';
 
 @Controller('users')
