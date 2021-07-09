@@ -1,6 +1,6 @@
 import { createLogger, format, transports } from 'winston';
 import { appendFileSync } from 'fs';
-import path from 'path';
+import * as path from 'path';
 
 const errorFile = path.join(__dirname, '../logs/error.log');
 const infoFile = path.join(__dirname, '../logs/info.log');
